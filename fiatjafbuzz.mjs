@@ -118,9 +118,9 @@ function getDailyMessage() {
         console.log('Setting up bot profile...');
         await setupProfile();
         
-        // Schedule daily posts at 11:11 Dakar time (UTC+0)
-        console.log('Setting up cron job for 11:11 Dakar time...');
-        cron.schedule('11 11 * * *', async () => {
+        // Schedule daily posts at 21:40 Dakar time (UTC+0)
+        console.log('Setting up cron job for 21:40 Dakar time...');
+        cron.schedule('40 21 * * *', async () => {
             try {
                 console.log('Executing scheduled post...');
                 const message = getDailyMessage();
